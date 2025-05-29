@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jogo de Adivinhação</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #00509e;
+    }
+    input, button {
+      font-size: 18px;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 6px;
+      border: 2px solid #00509e;
+      outline: none;
+    }
+    button {
+      background-color: #00509e;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+    button:hover {
+      background-color: #003f7f;
+    }
+    #resultado {
+      font-size: 20px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎯 Jogo de Adivinhação</h1>
+  <p>Tente adivinhar o número entre 1 e 100.</p>
+
+  <input type="number" id="palpite" placeholder="Digite seu palpite" min="1" max="100" />
+  <button onclick="verificarPalpite()">Enviar</button>
+
+  <p id="resultado"></p>
+  <p id="tentativasRestantes"></p>
+
+  <button onclick="reiniciarJogo()">Reiniciar</button>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
